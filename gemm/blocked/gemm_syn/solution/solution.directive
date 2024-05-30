@@ -1,0 +1,16 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="bbgemm" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="Mul"/>
+                <option name="variable" positionalBoolean="4" value="mul"/>
+            </pragma>
+        </directive>
+        <directive functionName="bbgemm" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="bbgemm"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

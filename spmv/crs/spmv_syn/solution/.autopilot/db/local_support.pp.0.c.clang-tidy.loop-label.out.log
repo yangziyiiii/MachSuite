@@ -1,0 +1,20 @@
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2115:3: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+  for( r=0; r<new_rands; r++ ) {
+  ^~~
+  VITIS_LOOP_97_1: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2115:3: note: FIX-IT applied suggested code changes
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2131:3: warning: Added loop label VITIS_LOOP_113_1:   [xilinx-label-all-loops]
+  for(i=1; i<((1)<<6); i++) {
+  ^~~
+  VITIS_LOOP_113_1: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2131:3: note: FIX-IT applied suggested code changes
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2138:3: warning: Added loop label VITIS_LOOP_120_2:   [xilinx-label-all-loops]
+  for(i=0; i<10000; i++) {
+  ^~~
+  VITIS_LOOP_120_2: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2138:3: note: FIX-IT applied suggested code changes
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2514:3: warning: Added loop label VITIS_LOOP_92_1:   [xilinx-label-all-loops]
+  for(i=0; i<494; i++) {
+  ^~~
+  VITIS_LOOP_92_1: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/local_support.pp.0.c:2514:3: note: FIX-IT applied suggested code changes

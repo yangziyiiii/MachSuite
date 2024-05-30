@@ -1,0 +1,65 @@
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 1, 
+                   Column: 9 }
+Function:        spmv
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 1, 
+                       Column: 9 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 2, 
+                   Column: 9 }
+Function:        spmv
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 2, 
+                       Column: 9 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 3, 
+                   Column: 9 }
+Function:        spmv
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 3, 
+                       Column: 9 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 4, 
+                   Column: 9 }
+Function:        spmv
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 4, 
+                       Column: 9 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 5, 
+                   Column: 9 }
+Function:        spmv
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: /home/yzy/MachSuite/spmv/crs/spmv_dir, Line: 5, 
+                       Column: 9 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...

@@ -1,0 +1,265 @@
+---
+MainSourceFile:  /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_97_1:  '
+    FileOffset:      97
+    FilePath:        /home/yzy/MachSuite/spmv/crs/support.h
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          51594
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_97_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_1:  '
+    FileOffset:      113
+    FilePath:        /home/yzy/MachSuite/spmv/crs/support.h
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          52001
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_2:  '
+    FileOffset:      120
+    FilePath:        /home/yzy/MachSuite/spmv/crs/support.h
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          52082
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_24_1:  '
+    FileOffset:      24
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          88819
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_24_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_46_1:  '
+    FileOffset:      46
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          89604
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_46_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_1:  '
+    FileOffset:      64
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          90027
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_1:  '
+    FileOffset:      83
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          90371
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_132_1:  '
+    FileOffset:      132
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          90834
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_132_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_133_1:  '
+    FileOffset:      133
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          91374
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_133_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_1:  '
+    FileOffset:      134
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          91915
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_1:  '
+    FileOffset:      135
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          92456
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_1:  '
+    FileOffset:      136
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          92991
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_1:  '
+    FileOffset:      137
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          93527
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_1:  '
+    FileOffset:      138
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          94064
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_1:  '
+    FileOffset:      139
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          94601
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_141_1:  '
+    FileOffset:      141
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          95133
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_141_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_1:  '
+    FileOffset:      142
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          95663
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_1:  '
+    FileOffset:      152
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          96199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_2:  '
+    FileOffset:      158
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          96387
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_177_1:  '
+    FileOffset:      177
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          96722
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_177_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_1:  '
+    FileOffset:      178
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          96951
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_179_1:  '
+    FileOffset:      179
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          97180
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_179_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_1:  '
+    FileOffset:      180
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          97409
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_1:  '
+    FileOffset:      181
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          97638
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_182_1:  '
+    FileOffset:      182
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          97865
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_182_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          98092
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_184_1:  '
+    FileOffset:      184
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          98319
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_184_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_186_1:  '
+    FileOffset:      186
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          98547
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_186_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_1:  '
+    FileOffset:      187
+    FilePath:        support.c
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/support.pp.0.c
+        Offset:          98775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_1: '
+...

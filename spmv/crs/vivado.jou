@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May 29 17:20:30 2024
+# Process ID: 401781
+# Current directory: /home/yzy/MachSuite/spmv/crs
+# Command line: vivado
+# Log file: /home/yzy/MachSuite/spmv/crs/vivado.log
+# Journal file: /home/yzy/MachSuite/spmv/crs/vivado.jou
+# Running On: yzy, OS: Linux, CPU Frequency: 2688.010 MHz, CPU Physical cores: 10, Host memory: 8227 MB
+#-----------------------------------------------------------
+start_gui

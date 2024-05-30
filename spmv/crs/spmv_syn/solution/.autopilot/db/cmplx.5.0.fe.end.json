@@ -1,0 +1,41 @@
+{
+    "0": {
+        "name": "spmv",
+        "file": "spmv.c",
+        "fileloc": "8",
+        "instructions": "35",
+        "total_instructions": "71",
+        "calls": "1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2",
+            "T": "2"
+        },
+        "stores": {
+            "L": "2",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "1": {
+        "name": "spmv_Pipeline_spmv_2",
+        "file": "spmv.c",
+        "fileloc": "9",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

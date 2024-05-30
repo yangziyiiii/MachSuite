@@ -1,0 +1,549 @@
+> make hls 
+vitis_hls hls.tcl
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:00 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'hls.tcl'
+INFO: [HLS 200-1510] Running: source hls.tcl
+INFO: [HLS 200-1510] Running: open_project spmv_syn 
+INFO: [HLS 200-10] Creating and opening project '/home/yzy/MachSuite/spmv/crs/spmv_syn'.
+INFO: [HLS 200-1510] Running: add_files spmv.c 
+INFO: [HLS 200-10] Adding design file 'spmv.c' to the project
+INFO: [HLS 200-1510] Running: add_files input.data 
+INFO: [HLS 200-10] Adding design file 'input.data' to the project
+INFO: [HLS 200-1510] Running: add_files check.data 
+INFO: [HLS 200-10] Adding design file 'check.data' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../common/harness.c 
+INFO: [HLS 200-10] Adding test bench file '../../common/harness.c' to the project
+INFO: [HLS 200-1510] Running: add_files support.c 
+INFO: [HLS 200-10] Adding design file 'support.c' to the project
+INFO: [HLS 200-1510] Running: add_files support.h 
+INFO: [HLS 200-10] Adding design file 'support.h' to the project
+INFO: [HLS 200-1510] Running: add_files local_support.c 
+INFO: [HLS 200-10] Adding design file 'local_support.c' to the project
+INFO: [HLS 200-1510] Running: set_top spmv 
+INFO: [HLS 200-1510] Running: open_solution -reset solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part virtex7 
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./spmv_dir
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv val 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv cols 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv rowDelimiters 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv vec 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv out 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_pipeline spmv/spmv_2 
+INFO: [HLS 200-1510] Running: set_directive_resource -core Mul spmv Si 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Skipped source file 'check.data'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input.data'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 264.172 MB.
+INFO: [HLS 200-10] Analyzing design file 'local_support.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'support.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'spmv.c' ... 
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:1:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:2:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:3:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:4:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:5:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:18:9)
+WARNING: [HLS 200-1986] Could not apply RESOURCE directive, invalid function, label, or variable (/home/yzy/MachSuite/spmv/crs/spmv_dir:18)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.69 seconds. CPU system time: 0.46 seconds. Elapsed time: 1.72 seconds; current allocated memory: 267.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 48 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 53 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:1:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:2:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:3:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:4:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:5:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.67 seconds. CPU system time: 0.3 seconds. Elapsed time: 6.88 seconds; current allocated memory: 268.500 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 268.500 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 268.500 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 268.516 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.105 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'spmv_1' (spmv.c:12:14) in function 'spmv' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 290.191 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'spmv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'spmv_Pipeline_spmv_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'spmv_2'.
+WARNING: [HLS 200-880] The II Violation in module 'spmv_Pipeline_spmv_2' (loop 'spmv_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln10', spmv.c:10) of variable 'sum', spmv.c:18 on local variable 'sum', spmv.c:10 and 'load' operation 64 bit ('sum_load', spmv.c:18) on local variable 'sum', spmv.c:10.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'spmv_Pipeline_spmv_2' (loop 'spmv_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln10', spmv.c:10) of variable 'sum', spmv.c:18 on local variable 'sum', spmv.c:10 and 'load' operation 64 bit ('sum_load', spmv.c:18) on local variable 'sum', spmv.c:10.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'spmv_Pipeline_spmv_2' (loop 'spmv_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln10', spmv.c:10) of variable 'sum', spmv.c:18 on local variable 'sum', spmv.c:10 and 'load' operation 64 bit ('sum_load', spmv.c:18) on local variable 'sum', spmv.c:10.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 14, loop 'spmv_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.07 seconds; current allocated memory: 291.621 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 291.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'spmv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'spmv_Pipeline_spmv_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'spmv_Pipeline_spmv_2' pipeline 'spmv_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'spmv_Pipeline_spmv_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'spmv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/val_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/cols' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/rowDelimiters' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/vec' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/out_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'spmv' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'spmv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 292.836 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 296.008 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 298.484 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for spmv.
+INFO: [VLOG 209-307] Generating Verilog RTL for spmv.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.90 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2.91 seconds. CPU system time: 0.83 seconds. Elapsed time: 9.28 seconds; current allocated memory: 34.547 MB.
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+make[1]: Entering directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+   Build using "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_spmv.cpp
+   Compiling (apcc) harness.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:14 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5536651717038854877236
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.75 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.86 seconds; peak allocated memory: 99.590 MB.
+   Compiling (apcc) local_support.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:17 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5537701717038857991700
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.64 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 1.75 seconds; peak allocated memory: 99.594 MB.
+   Compiling (apcc) spmv.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:20 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5538401717038860985487
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.67 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.71 seconds; peak allocated memory: 99.594 MB.
+   Compiling (apcc) support.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:23 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5539041717038863948386
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.81 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 1.9 seconds; peak allocated memory: 99.594 MB.
+   Compiling apatb_spmv_ir.ll
+   Generating cosim.tv.exe
+make[1]: Leaving directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Success.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'spmv_dmul_64ns_64ns_64_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'spmv_dmul_64ns_64ns_64_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'spmv_dadd_64ns_64ns_64_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'spmv_dadd_64ns_64ns_64_5_full_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 11:14:39 2024...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_spmv_top glbl -Oenable_linking_all_libraries -prj spmv.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s spmv 
+Multi-threading is on. Using 18 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/ip/xil_defaultlib/spmv_dmul_64ns_64ns_64_5_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv_dmul_64ns_64ns_64_5_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/ip/xil_defaultlib/spmv_dadd_64ns_64ns_64_5_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv_dadd_64ns_64ns_64_5_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/AESL_automem_cols.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_cols
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/AESL_automem_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv_dadd_64ns_64ns_64_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv_dadd_64ns_64ns_64_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/AESL_automem_rowDelimiters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_rowDelimiters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv_spmv_Pipeline_spmv_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv_spmv_Pipeline_spmv_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/AESL_automem_vec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_vec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv_dmul_64ns_64ns_64_5_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spmv_dmul_64ns_64ns_64_5_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_spmv_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/AESL_automem_val_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_val_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_exp_table...
+Compiling package mult_gen_v12_0_19.mult_gen_v12_0_19_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_pkg
+Compiling package floating_point_v7_1_16.flt_utils
+Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=52)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=14,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=54,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=16,length=0)\]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.zero_det_sel [\zero_det_sel(c_xdevicefamily="v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=55,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=54,regi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.alignment [\alignment(c_xdevicefamily="virt...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=47,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=18,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=48,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9,length=0)\]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=56,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_16.addsub_dsp [\addsub_dsp(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_16.addsub [\addsub(c_xdevicefamily="virtex7...]
+Compiling architecture rtl of entity floating_point_v7_1_16.align_add [\align_add(c_xdevicefamily="virt...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=6,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtex7",...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=56)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=56,resu...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=19,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=28,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=29,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_16.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=2)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq [\compare_eq(c_xdevicefamily="vir...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare [\compare(c_xdevicefamily="virtex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_exp [\flt_add_exp(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add [\flt_add(c_xdevicefamily="virtex...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.spmv_dadd_64ns_64ns_64_5_full_ds...
+Compiling module xil_defaultlib.spmv_dadd_64ns_64ns_64_5_full_ds...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_16.fix_mult_dsp48e1_dbl [\fix_mult_dsp48e1_dbl(mult_usage...]
+Compiling architecture rtl of entity floating_point_v7_1_16.fix_mult [\fix_mult(c_xdevicefamily="virte...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=54,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult [\flt_mult(c_xdevicefamily="virte...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.spmv_dmul_64ns_64ns_64_5_max_dsp...
+Compiling module xil_defaultlib.spmv_dmul_64ns_64ns_64_5_max_dsp...
+Compiling module xil_defaultlib.spmv_flow_control_loop_pipe_sequ...
+Compiling module xil_defaultlib.spmv_spmv_Pipeline_spmv_2
+Compiling module xil_defaultlib.spmv
+Compiling module xil_defaultlib.AESL_automem_val_r
+Compiling module xil_defaultlib.AESL_automem_cols
+Compiling module xil_defaultlib.AESL_automem_rowDelimiters
+Compiling module xil_defaultlib.AESL_automem_vec
+Compiling module xil_defaultlib.AESL_automem_out_r
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_spmv_top
+Compiling module work.glbl
+Built simulation snapshot spmv
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/spmv/xsim_script.tcl
+# xsim {spmv} -autoloadwcfg -tclbatch {spmv.tcl}
+Time resolution is 1 ps
+source spmv.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 130955100 ps  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_spmv_2_fu_94/dmul_64ns_64ns_64_5_max_dsp_1_U2/spmv_dmul_64ns_64ns_64_5_max_dsp_1_ip_u/inst/i_synth/mult/OP/i_non_prim/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2023.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 001XXXX with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 131005 ns  Iteration: 14  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_spmv_2_fu_94/dadd_64ns_64ns_64_5_full_dsp_1_U1/spmv_dadd_64ns_64ns_64_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/logic_speed/OP/ALIGN_BLK/FRAC_ADDSUB/dsp_add/FRAC_ADDSUB/i_no_versal_es1_workaround/dsp48e1_add/DSP48E1_ADD/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2023.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [n/a] @ "131015000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 131075 ns : File "/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/verilog/spmv.autotb.v" Line 436
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu May 30 11:15:07 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+Success.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 60.18 seconds. CPU system time: 4.36 seconds. Elapsed time: 56.34 seconds; current allocated memory: 7.754 MB.
+INFO: [HLS 200-112] Total CPU user time: 64.37 seconds. Total CPU system time: 5.37 seconds. Total elapsed time: 67.49 seconds; peak allocated memory: 306.414 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu May 30 11:15:07 2024...

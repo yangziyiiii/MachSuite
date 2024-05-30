@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/./sim/autowrap/testbench/spmv.c_pre.c.tb.c

@@ -1,0 +1,4 @@
+6 warnings and 6 errors generated.
+Error while processing /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c.
+clang-tidy applied 3 of 3 suggested fixes.
+Suppressed 6 warnings (6 with check filters).

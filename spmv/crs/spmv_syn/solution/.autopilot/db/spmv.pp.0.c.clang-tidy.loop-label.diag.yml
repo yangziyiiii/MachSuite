@@ -1,0 +1,61 @@
+---
+MainSourceFile:  /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_97_1:  '
+    FileOffset:      97
+    FilePath:        /home/yzy/MachSuite/spmv/crs/support.h
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c
+        Offset:          51590
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_97_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_1:  '
+    FileOffset:      113
+    FilePath:        /home/yzy/MachSuite/spmv/crs/support.h
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c
+        Offset:          51997
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_2:  '
+    FileOffset:      120
+    FilePath:        /home/yzy/MachSuite/spmv/crs/support.h
+    Replacements:    
+      - FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c
+        Offset:          52078
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1
+    FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_dir
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      2
+    FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_dir
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      3
+    FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_dir
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      4
+    FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_dir
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      5
+    FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_dir
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: Mul pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      18
+    FilePath:        /home/yzy/MachSuite/spmv/crs/spmv_dir
+    Replacements:    
+...

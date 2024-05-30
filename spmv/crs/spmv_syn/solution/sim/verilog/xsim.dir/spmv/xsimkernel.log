@@ -1,0 +1,7 @@
+Running: xsim.dir/spmv/xsimk -simmode gui -wdb spmv.wdb -simrunnum 0 -socket 60719
+Design successfully loaded
+Design Loading Memory Usage: 30520 KB (Peak: 30520 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 121424 KB (Peak: 169788 KB)
+Simulation CPU Usage: 4660 ms

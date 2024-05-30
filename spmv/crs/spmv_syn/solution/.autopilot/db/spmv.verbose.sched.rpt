@@ -1,0 +1,184 @@
+
+
+================================================================
+== Vitis HLS Report for 'spmv'
+================================================================
+* Date:           Thu May 30 11:14:10 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        spmv_syn
+* Solution:       solution (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7v585t-ffg1761-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.148 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- spmv_1  |        ?|        ?|         ?|          -|          -|   494|        no|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.84>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [spmv.c:9]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sum_loc = alloca i64 1"   --->   Operation 7 'alloca' 'sum_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%spectopmodule_ln8 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [spmv.c:8]   --->   Operation 8 'spectopmodule' 'spectopmodule_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %val_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %val_r"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cols"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rowDelimiters, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rowDelimiters"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %vec, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %vec"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %out_r"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.84ns)   --->   "%store_ln9 = store i9 0, i9 %i" [spmv.c:9]   --->   Operation 19 'store' 'store_ln9' <Predicate = true> <Delay = 0.84>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln12 = br void %spmv_2" [spmv.c:12]   --->   Operation 20 'br' 'br_ln12' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.61>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%i_1 = load i9 %i" [spmv.c:15]   --->   Operation 21 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.35ns)   --->   "%icmp_ln12 = icmp_eq  i9 %i_1, i9 494" [spmv.c:12]   --->   Operation 22 'icmp' 'icmp_ln12' <Predicate = true> <Delay = 1.35> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (1.35ns)   --->   "%add_ln15 = add i9 %i_1, i9 1" [spmv.c:15]   --->   Operation 23 'add' 'add_ln15' <Predicate = true> <Delay = 1.35> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln12 = br i1 %icmp_ln12, void %spmv_2.split, void %for.end17" [spmv.c:12]   --->   Operation 24 'br' 'br_ln12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln12 = zext i9 %i_1" [spmv.c:12]   --->   Operation 25 'zext' 'zext_ln12' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%rowDelimiters_addr = getelementptr i32 %rowDelimiters, i64 0, i64 %zext_ln12" [spmv.c:14]   --->   Operation 26 'getelementptr' 'rowDelimiters_addr' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (2.26ns)   --->   "%tmp_begin = load i9 %rowDelimiters_addr" [spmv.c:14]   --->   Operation 27 'load' 'tmp_begin' <Predicate = (!icmp_ln12)> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 495> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i9 %add_ln15" [spmv.c:15]   --->   Operation 28 'zext' 'zext_ln15' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%rowDelimiters_addr_1 = getelementptr i32 %rowDelimiters, i64 0, i64 %zext_ln15" [spmv.c:15]   --->   Operation 29 'getelementptr' 'rowDelimiters_addr_1' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 30 [2/2] (2.26ns)   --->   "%tmp_end = load i9 %rowDelimiters_addr_1" [spmv.c:15]   --->   Operation 30 'load' 'tmp_end' <Predicate = (!icmp_ln12)> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 495> <RAM>
+ST_2 : Operation 31 [1/1] (0.84ns)   --->   "%store_ln9 = store i9 %add_ln15, i9 %i" [spmv.c:9]   --->   Operation 31 'store' 'store_ln9' <Predicate = (!icmp_ln12)> <Delay = 0.84>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln22 = ret" [spmv.c:22]   --->   Operation 32 'ret' 'ret_ln22' <Predicate = (icmp_ln12)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.11>
+ST_3 : Operation 33 [1/2] (2.26ns)   --->   "%tmp_begin = load i9 %rowDelimiters_addr" [spmv.c:14]   --->   Operation 33 'load' 'tmp_begin' <Predicate = true> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 495> <RAM>
+ST_3 : Operation 34 [1/2] (2.26ns)   --->   "%tmp_end = load i9 %rowDelimiters_addr_1" [spmv.c:15]   --->   Operation 34 'load' 'tmp_end' <Predicate = true> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 495> <RAM>
+ST_3 : Operation 35 [2/2] (0.84ns)   --->   "%call_ln14 = call void @spmv_Pipeline_spmv_2, i32 %tmp_begin, i32 %tmp_end, i64 %val_r, i32 %cols, i64 %vec, i64 %sum_loc" [spmv.c:14]   --->   Operation 35 'call' 'call_ln14' <Predicate = true> <Delay = 0.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln14 = call void @spmv_Pipeline_spmv_2, i32 %tmp_begin, i32 %tmp_end, i64 %val_r, i32 %cols, i64 %vec, i64 %sum_loc" [spmv.c:14]   --->   Operation 36 'call' 'call_ln14' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 2.26>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%speclooptripcount_ln9 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 494, i64 494, i64 494" [spmv.c:9]   --->   Operation 37 'speclooptripcount' 'speclooptripcount_ln9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln12 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [spmv.c:12]   --->   Operation 38 'specloopname' 'specloopname_ln12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%sum_loc_load = load i64 %sum_loc"   --->   Operation 39 'load' 'sum_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%bitcast_ln20 = bitcast i64 %sum_loc_load" [spmv.c:20]   --->   Operation 40 'bitcast' 'bitcast_ln20' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%out_r_addr = getelementptr i64 %out_r, i64 0, i64 %zext_ln12" [spmv.c:20]   --->   Operation 41 'getelementptr' 'out_r_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (2.26ns)   --->   "%store_ln20 = store i64 %bitcast_ln20, i9 %out_r_addr" [spmv.c:20]   --->   Operation 42 'store' 'store_ln20' <Predicate = true> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 494> <RAM>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln12 = br void %spmv_2" [spmv.c:12]   --->   Operation 43 'br' 'br_ln12' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.844ns
+The critical path consists of the following:
+	'alloca' operation 9 bit ('i', spmv.c:9) [6]  (0.000 ns)
+	'store' operation 0 bit ('store_ln9', spmv.c:9) of constant 0 on local variable 'i', spmv.c:9 [19]  (0.844 ns)
+
+ <State 2>: 3.618ns
+The critical path consists of the following:
+	'load' operation 9 bit ('i', spmv.c:15) on local variable 'i', spmv.c:9 [22]  (0.000 ns)
+	'add' operation 9 bit ('add_ln15', spmv.c:15) [24]  (1.352 ns)
+	'getelementptr' operation 9 bit ('rowDelimiters_addr_1', spmv.c:15) [33]  (0.000 ns)
+	'load' operation 32 bit ('tmp_end', spmv.c:15) on array 'rowDelimiters' [34]  (2.266 ns)
+
+ <State 3>: 3.110ns
+The critical path consists of the following:
+	'load' operation 32 bit ('tmp_begin', spmv.c:14) on array 'rowDelimiters' [31]  (2.266 ns)
+	'call' operation 0 bit ('call_ln14', spmv.c:14) to 'spmv_Pipeline_spmv_2' [35]  (0.844 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 2.266ns
+The critical path consists of the following:
+	'load' operation 64 bit ('sum_loc_load') on local variable 'sum_loc' [36]  (0.000 ns)
+	'store' operation 0 bit ('store_ln20', spmv.c:20) of variable 'bitcast_ln20', spmv.c:20 on array 'out_r' [39]  (2.266 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

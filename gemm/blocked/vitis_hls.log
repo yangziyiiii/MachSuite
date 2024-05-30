@@ -1,0 +1,61 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:09:50 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/gemm/blocked'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'hls.tcl'
+INFO: [HLS 200-1510] Running: source hls.tcl
+INFO: [HLS 200-1510] Running: open_project gemm_syn 
+INFO: [HLS 200-10] Opening project '/home/yzy/MachSuite/gemm/blocked/gemm_syn'.
+INFO: [HLS 200-1510] Running: add_files gemm.c 
+INFO: [HLS 200-10] Adding design file 'gemm.c' to the project
+INFO: [HLS 200-1510] Running: add_files input.data 
+INFO: [HLS 200-10] Adding design file 'input.data' to the project
+INFO: [HLS 200-1510] Running: add_files check.data 
+INFO: [HLS 200-10] Adding design file 'check.data' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../common/harness.c 
+INFO: [HLS 200-10] Adding test bench file '../../common/harness.c' to the project
+INFO: [HLS 200-1510] Running: set_top bbgemm 
+INFO: [HLS 200-1510] Running: open_solution -reset solution 
+INFO: [HLS 200-10] Opening and resetting solution '/home/yzy/MachSuite/gemm/blocked/gemm_syn/solution'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part virtex7 
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./gemm_dir
+INFO: [HLS 200-1510] Running: set_directive_resource -core Mul bbgemm mul 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Skipped source file 'check.data'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input.data'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 264.129 MB.
+INFO: [HLS 200-10] Analyzing design file 'gemm.c' ... 
+ERROR: [HLS 207-812] 'support.h' file not found (./gemm.h:10:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0.11 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.520 MB.
+command 'ap_source' returned error code
+    while executing
+"source hls.tcl"
+    invoked from within
+"hls::main hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 1.33 seconds. Total CPU system time: 0.18 seconds. Total elapsed time: 1.59 seconds; peak allocated memory: 265.648 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu May 30 11:09:51 2024...

@@ -1,0 +1,49 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="RAM_1P_BRAM"/>
+                <option name="variable" positionalBoolean="4" value="val"/>
+            </pragma>
+        </directive>
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="RAM_1P_BRAM"/>
+                <option name="variable" positionalBoolean="4" value="cols"/>
+            </pragma>
+        </directive>
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="RAM_1P_BRAM"/>
+                <option name="variable" positionalBoolean="4" value="rowDelimiters"/>
+            </pragma>
+        </directive>
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="RAM_1P_BRAM"/>
+                <option name="variable" positionalBoolean="4" value="vec"/>
+            </pragma>
+        </directive>
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="RAM_1P_BRAM"/>
+                <option name="variable" positionalBoolean="4" value="out"/>
+            </pragma>
+        </directive>
+        <directive functionName="spmv" label="spmv_2" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="core" value="Mul"/>
+                <option name="variable" positionalBoolean="4" value="Si"/>
+            </pragma>
+        </directive>
+        <directive functionName="spmv" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="spmv"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

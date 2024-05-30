@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="spmv.c" line="16" pragmaType="pipeline" parentfunction="spmv" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="spmv.c" line="1" pragmaType="bind_storage" parentfunction="spmv" op="666" impl="18" latency="-1" variable="val"/>
+<pragma file="spmv.c" line="2" pragmaType="bind_storage" parentfunction="spmv" op="666" impl="18" latency="-1" variable="cols"/>
+<pragma file="spmv.c" line="3" pragmaType="bind_storage" parentfunction="spmv" op="666" impl="18" latency="-1" variable="rowDelimiters"/>
+<pragma file="spmv.c" line="4" pragmaType="bind_storage" parentfunction="spmv" op="666" impl="18" latency="-1" variable="vec"/>
+<pragma file="spmv.c" line="5" pragmaType="bind_storage" parentfunction="spmv" op="666" impl="18" latency="-1" variable="out"/>
+<pragma file="spmv.c" line="18" pragmaType="bind_op" parentfunction="spmv" op="12" impl="1" latency="-1"/>
+<pragma file="spmv.c" line="18" pragmaType="bind_op" parentfunction="spmv" op="12" impl="1" latency="-1"/>
+</pragmas>

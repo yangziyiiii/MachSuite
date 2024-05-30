@@ -1,0 +1,148 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part virtex7 
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./spmv_dir
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv val 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv cols 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv rowDelimiters 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv vec 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_resource -core RAM_1P_BRAM spmv out 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_pipeline spmv/spmv_2 
+INFO: [HLS 200-1510] Running: set_directive_resource -core Mul spmv Si 
+WARNING: [HLS 200-484] The 'set_directive_resource -core' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_resource -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Skipped source file 'check.data'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input.data'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 264.172 MB.
+INFO: [HLS 200-10] Analyzing design file 'local_support.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'support.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'spmv.c' ... 
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:1:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:2:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:3:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:4:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:5:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:18:9)
+WARNING: [HLS 200-1986] Could not apply RESOURCE directive, invalid function, label, or variable (/home/yzy/MachSuite/spmv/crs/spmv_dir:18)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.69 seconds. CPU system time: 0.46 seconds. Elapsed time: 1.72 seconds; current allocated memory: 267.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 48 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 37 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 53 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:1:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:2:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:3:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:4:9)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (/home/yzy/MachSuite/spmv/crs/spmv_dir:5:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.67 seconds. CPU system time: 0.3 seconds. Elapsed time: 6.88 seconds; current allocated memory: 268.500 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 268.500 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 268.500 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 268.516 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.105 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'spmv_1' (spmv.c:12:14) in function 'spmv' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 290.191 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'spmv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'spmv_Pipeline_spmv_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'spmv_2'.
+WARNING: [HLS 200-880] The II Violation in module 'spmv_Pipeline_spmv_2' (loop 'spmv_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln10', spmv.c:10) of variable 'sum', spmv.c:18 on local variable 'sum', spmv.c:10 and 'load' operation 64 bit ('sum_load', spmv.c:18) on local variable 'sum', spmv.c:10.
+WARNING: [HLS 200-880] The II Violation in module 'spmv_Pipeline_spmv_2' (loop 'spmv_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln10', spmv.c:10) of variable 'sum', spmv.c:18 on local variable 'sum', spmv.c:10 and 'load' operation 64 bit ('sum_load', spmv.c:18) on local variable 'sum', spmv.c:10.
+WARNING: [HLS 200-880] The II Violation in module 'spmv_Pipeline_spmv_2' (loop 'spmv_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('sum_write_ln10', spmv.c:10) of variable 'sum', spmv.c:18 on local variable 'sum', spmv.c:10 and 'load' operation 64 bit ('sum_load', spmv.c:18) on local variable 'sum', spmv.c:10.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 14, loop 'spmv_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.07 seconds; current allocated memory: 291.621 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 291.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'spmv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'spmv_Pipeline_spmv_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'spmv_Pipeline_spmv_2' pipeline 'spmv_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'spmv_Pipeline_spmv_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'spmv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/val_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/cols' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/rowDelimiters' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/vec' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'spmv/out_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'spmv' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'spmv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 292.836 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 296.008 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 298.484 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for spmv.
+INFO: [VLOG 209-307] Generating Verilog RTL for spmv.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.90 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2.91 seconds. CPU system time: 0.83 seconds. Elapsed time: 9.28 seconds; current allocated memory: 34.547 MB.
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 60.18 seconds. CPU system time: 4.36 seconds. Elapsed time: 56.34 seconds; current allocated memory: 7.754 MB.

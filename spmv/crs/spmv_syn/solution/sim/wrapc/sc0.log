@@ -1,0 +1,50 @@
+make[1]: Entering directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+   Build using "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_spmv.cpp
+   Compiling (apcc) harness.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:14 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5536651717038854877236
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.75 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.86 seconds; peak allocated memory: 99.590 MB.
+   Compiling (apcc) local_support.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:17 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5537701717038857991700
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.64 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 1.75 seconds; peak allocated memory: 99.594 MB.
+   Compiling (apcc) spmv.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:20 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5538401717038860985487
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.67 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.71 seconds; peak allocated memory: 99.594 MB.
+   Compiling (apcc) support.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yzy' on host 'yzy.' (Linux_x86_64 version 5.15.146.1-microsoft-standard-WSL2) on Thu May 30 11:14:23 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include:/usr/include/x86_64-linux-gnu.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc/apcc_db_yzy/5539041717038863948386
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.81 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 1.9 seconds; peak allocated memory: 99.594 MB.
+   Compiling apatb_spmv_ir.ll
+   Generating cosim.tv.exe
+make[1]: Leaving directory '/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/sim/wrapc'

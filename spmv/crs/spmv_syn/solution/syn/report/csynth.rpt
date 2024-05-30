@@ -1,0 +1,147 @@
+
+
+================================================================
+== Synthesis Summary Report of 'spmv'
+================================================================
++ General Information: 
+    * Date:           Thu May 30 11:14:11 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        spmv_syn
+    * Solution:       solution (Vivado IP Flow Target)
+    * Product family: virtex7
+    * Target device:  xc7v585t-ffg1761-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |          Modules         | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |            |            |     |
+    |          & Loops         | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +--------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |+ spmv                    |     -|  0.15|        -|       -|         -|        -|     -|        no|     -|  14 (1%)|  1229 (~0%)|  1297 (~0%)|    -|
+    | o spmv_1                 |     -|  7.30|        -|       -|         -|        -|     -|        no|     -|        -|           -|           -|    -|
+    |  + spmv_Pipeline_spmv_2  |     -|  0.15|        -|       -|         -|        -|     -|        no|     -|  14 (1%)|  1141 (~0%)|  1231 (~0%)|    -|
+    |   o spmv_2               |    II|  7.30|        -|       -|        13|        4|     -|       yes|     -|        -|           -|           -|    -|
+    +--------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++------------------------+-----------+----------+
+| Port                   | Direction | Bitwidth |
++------------------------+-----------+----------+
+| cols_address0          | out       | 11       |
+| cols_q0                | in        | 32       |
+| out_r_address0         | out       | 9        |
+| out_r_d0               | out       | 64       |
+| rowDelimiters_address0 | out       | 9        |
+| rowDelimiters_address1 | out       | 9        |
+| rowDelimiters_q0       | in        | 32       |
+| rowDelimiters_q1       | in        | 32       |
+| val_r_address0         | out       | 11       |
+| val_r_q0               | in        | 64       |
+| vec_address0           | out       | 9        |
+| vec_q0                 | in        | 64       |
++------------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+----------+
+| Argument      | Direction | Datatype |
++---------------+-----------+----------+
+| val           | in        | double*  |
+| cols          | in        | int*     |
+| rowDelimiters | in        | int*     |
+| vec           | in        | double*  |
+| out           | out       | double*  |
++---------------+-----------+----------+
+
+* SW-to-HW Mapping
++---------------+------------------------+---------+----------+
+| Argument      | HW Interface           | HW Type | HW Usage |
++---------------+------------------------+---------+----------+
+| val           | val_r_address0         | port    | offset   |
+| val           | val_r_ce0              | port    |          |
+| val           | val_r_q0               | port    |          |
+| cols          | cols_address0          | port    | offset   |
+| cols          | cols_ce0               | port    |          |
+| cols          | cols_q0                | port    |          |
+| rowDelimiters | rowDelimiters_address0 | port    | offset   |
+| rowDelimiters | rowDelimiters_ce0      | port    |          |
+| rowDelimiters | rowDelimiters_q0       | port    |          |
+| rowDelimiters | rowDelimiters_address1 | port    | offset   |
+| rowDelimiters | rowDelimiters_ce1      | port    |          |
+| rowDelimiters | rowDelimiters_q1       | port    |          |
+| vec           | vec_address0           | port    | offset   |
+| vec           | vec_ce0                | port    |          |
+| vec           | vec_q0                 | port    |          |
+| out           | out_r_address0         | port    | offset   |
+| out           | out_r_ce0              | port    |          |
+| out           | out_r_we0              | port    |          |
+| out           | out_r_d0               | port    |          |
++---------------+------------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+----------+------+---------+---------+
+| Name                                 | DSP | Pragma | Variable | Op   | Impl    | Latency |
++--------------------------------------+-----+--------+----------+------+---------+---------+
+| + spmv                               | 14  |        |          |      |         |         |
+|   add_ln15_fu_123_p2                 |     |        | add_ln15 | add  | fabric  | 0       |
+|  + spmv_Pipeline_spmv_2              | 14  |        |          |      |         |         |
+|    dmul_64ns_64ns_64_5_max_dsp_1_U2  | 11  |        | Si       | dmul | maxdsp  | 4       |
+|    dadd_64ns_64ns_64_5_full_dsp_1_U1 | 3   |        | sum_1    | dadd | fulldsp | 4       |
+|    add_ln16_fu_142_p2                |     |        | add_ln16 | add  | fabric  | 0       |
++--------------------------------------+-----+--------+----------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+-----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options                                 | Location                          | Messages                                                                                                                         |
++----------+-----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| resource | core=RAM_1P_BRAM variable=cols          | spmv_dir:2 in spmv, cols          | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                                                       |
+|          |                                         |                                   | The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead |
+| resource | core=RAM_1P_BRAM variable=out           | spmv_dir:5 in spmv, out           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                                                       |
+|          |                                         |                                   | The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead |
+| resource | core=RAM_1P_BRAM variable=rowDelimiters | spmv_dir:3 in spmv, rowDelimiters | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                                                       |
+|          |                                         |                                   | The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead |
+| resource | core=Mul variable=Si                    | spmv_dir:18 in spmv, Si           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                                                       |
+| resource | core=RAM_1P_BRAM variable=val           | spmv_dir:1 in spmv, val           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                                                       |
+|          |                                         |                                   | The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead |
+| resource | core=RAM_1P_BRAM variable=vec           | spmv_dir:4 in spmv, vec           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                                                       |
+|          |                                         |                                   | The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead |
++----------+-----------------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++----------+---------+---------------------+
+| Type     | Options | Location            |
++----------+---------+---------------------+
+| pipeline |         | spmv_dir:16 in spmv |
++----------+---------+---------------------+
+
+

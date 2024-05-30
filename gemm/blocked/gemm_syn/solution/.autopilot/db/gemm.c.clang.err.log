@@ -1,0 +1,5 @@
+In file included from gemm.c:8:
+./gemm.h:10:10: fatal error: 'support.h' file not found
+#include "support.h"
+         ^~~~~~~~~~~
+1 error generated.

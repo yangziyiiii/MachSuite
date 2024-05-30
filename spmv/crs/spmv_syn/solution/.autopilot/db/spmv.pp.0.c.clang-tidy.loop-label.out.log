@@ -1,0 +1,33 @@
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2120:3: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+  for( r=0; r<new_rands; r++ ) {
+  ^~~
+  VITIS_LOOP_97_1: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2120:3: note: FIX-IT applied suggested code changes
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2136:3: warning: Added loop label VITIS_LOOP_113_1:   [xilinx-label-all-loops]
+  for(i=1; i<((1)<<6); i++) {
+  ^~~
+  VITIS_LOOP_113_1: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2136:3: note: FIX-IT applied suggested code changes
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2143:3: warning: Added loop label VITIS_LOOP_120_2:   [xilinx-label-all-loops]
+  for(i=0; i<10000; i++) {
+  ^~~
+  VITIS_LOOP_120_2: 
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2143:3: note: FIX-IT applied suggested code changes
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2171:9: error: Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=val
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2179:9: error: Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=cols
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2183:9: error: Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=rowDelimiters
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2187:9: error: Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=vec
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2191:9: error: Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=out
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_syn/solution/.autopilot/db/spmv.pp.0.c:2200:9: error: Resource with core_name: Mul pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLSDIRECTIVE RESOURCE core=Mul variable=Si
+        ^

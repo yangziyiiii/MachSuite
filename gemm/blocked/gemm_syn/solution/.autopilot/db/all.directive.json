@@ -1,0 +1,48 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "bbgemm",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "Mul"
+        },
+        {
+          "name": "variable",
+          "value": "mul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/gemm/blocked/gemm_dir",
+    "sourceLine": 26,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "bbgemm",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "bbgemm"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/gemm/blocked/hls.tcl",
+    "sourceLine": 17,
+    "success": false
+  }
+]

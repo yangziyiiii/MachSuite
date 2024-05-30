@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1850" tag="" content="Skipped source file &apos;check.data&apos;. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1850" tag="" content="Skipped source file &apos;input.data&apos;. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 264.129 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gemm.c&apos; ..." resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-812]" key="HLS 207-812" tag="" content="&apos;support.h&apos; file not found (./gemm.h:10:10)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 0.11 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.520 MB." resolution=""/>
+</Messages>

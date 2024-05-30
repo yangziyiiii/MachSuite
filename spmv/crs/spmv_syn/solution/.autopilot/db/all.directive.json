@@ -1,0 +1,188 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "RAM_1P_BRAM"
+        },
+        {
+          "name": "variable",
+          "value": "val"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 1,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "RAM_1P_BRAM"
+        },
+        {
+          "name": "variable",
+          "value": "cols"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 2,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "RAM_1P_BRAM"
+        },
+        {
+          "name": "variable",
+          "value": "rowDelimiters"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 3,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "RAM_1P_BRAM"
+        },
+        {
+          "name": "variable",
+          "value": "vec"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 4,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "RAM_1P_BRAM"
+        },
+        {
+          "name": "variable",
+          "value": "out"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 5,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "spmv_2",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 16,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "RESOURCE",
+      "option": [
+        {
+          "name": "core",
+          "value": "Mul"
+        },
+        {
+          "name": "variable",
+          "value": "Si"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/spmv_dir",
+    "sourceLine": 18,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "spmv",
+    "id": 7,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "spmv"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/yzy/MachSuite/spmv/crs/hls.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

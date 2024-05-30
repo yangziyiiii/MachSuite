@@ -1,0 +1,21 @@
+<dict>
+  <key>main-file</key>
+  <string>gemm.c</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>fatal error</string>
+      <key>filename</key>
+      <string>./gemm.h</string>
+      <key>line</key>
+      <integer>10</integer>
+      <key>column</key>
+      <integer>10</integer>
+      <key>message</key>
+      <string>&apos;support.h&apos; file not found</string>
+      <key>ID</key>
+      <integer>812</integer>
+    </dict>
+  </array>
+</dict>

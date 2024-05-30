@@ -1,0 +1,31 @@
+/home/yzy/MachSuite/spmv/crs/spmv_dir:1:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=val
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=core=RAM_1P_BRAM variable=val_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/yzy/MachSuite/spmv/crs/hls.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=name=spmv_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=spmv
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:2:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=cols
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:2:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=core=RAM_1P_BRAM variable=cols_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/yzy/MachSuite/spmv/crs/spmv_dir:3:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=rowDelimiters
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:3:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=core=RAM_1P_BRAM variable=rowDelimiters_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/yzy/MachSuite/spmv/crs/spmv_dir:4:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=vec
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=core=RAM_1P_BRAM variable=vec_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/yzy/MachSuite/spmv/crs/spmv_dir:5:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLSDIRECTIVE RESOURCE core=RAM_1P_BRAM variable=out
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:5:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=core=RAM_1P_BRAM variable=out_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/yzy/MachSuite/spmv/crs/spmv_dir:18:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLSDIRECTIVE RESOURCE core=Mul variable=Si
+        ^
+/home/yzy/MachSuite/spmv/crs/spmv_dir:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=core=Mul variable=Si_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/yzy/MachSuite/spmv/crs/spmv_dir:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=spmv_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE PIPELINE
+        ^
+14 warnings generated.
